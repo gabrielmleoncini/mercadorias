@@ -94,7 +94,7 @@
                         </select>
                     </div>
                 </div>
-                
+
                 <div class="form-group">
                     <hr />
                     <div class="row">
@@ -105,6 +105,10 @@
                     </div>
                 </div>
 
+            </form>
+
+            <form action="listaMercadorias.php">
+                <button type="submit" class="btn btn-primary">Operações</button>
             </form>
         </div>
 

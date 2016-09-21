@@ -6,10 +6,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Sistema de Mercadorias</title>
-        
+
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        
+
     </head>
     <body>
         <div id="main" class="container-fluid">
@@ -25,7 +25,7 @@
             <?php
             //Incluindo a conexao com o banco de dados
             include './conexao/conexaobd.php';
-            
+
             $btn = implode("", $_GET);
             //Verificação das açoes dos botões de ordenação
             if ($btn == "compra") {
@@ -38,7 +38,6 @@
                 $sql = "SELECT * FROM mercadoria ORDER BY reg DESC";
                 $qr = mysql_query($sql) or die(mysql_error());
             }
-
             ?>
             <table class="table">
                 <thead>
@@ -68,7 +67,11 @@
                 ?>
 
             </table>
-
+        <form action="index.php">
+            <button type="submit" class="btn btn-primary">Voltar</button>
+        </form>
         </div>
+
+
     </body>
 </html>
